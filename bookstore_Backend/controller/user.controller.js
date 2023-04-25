@@ -10,6 +10,7 @@ exports.getAllUser = async (req, res) => {
 exports.getUserById = async (req, res) => {
     try{
         const user = await User.findById({_id: req.params.id});
+        console.log(user);
         res.json(user);
     }
     catch(err){
@@ -24,4 +25,19 @@ exports.deleteUser = (req, res) => {
     }).then((user) => {
         res.send(user);
     });
+}
+
+// API TO Update User
+exports.updateUser = (req, res) => {
+    User.findOneAndUpdate(
+        {_id: req.params.id},
+        {
+            $set:{
+                username: req.body.username,
+                email: req.body.email
+            }
+        }
+    ).then(() => {
+        res.send({ message: "updated successfully" });
+      })
 }

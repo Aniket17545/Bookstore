@@ -18,10 +18,14 @@ const db = mongoose.connection;
 db.on('error', (error) => (console.error(error)))
 db.once('open', () => console.log('Connected to Database'))
 
-const UserRoute = require("./route/user.routes");
+const userRoute = require("./route/user.routes");
+const authRoute =require("./route/auth.route");
 
 // User Route
-app.use('/user', UserRoute)
+app.use('/user', userRoute);
+
+// Admin Route
+app.use('/auth', authRoute);
 
 // start the server
 app.listen(port, () => { console.log('Server Started on Port : 5500')});
