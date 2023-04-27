@@ -44,3 +44,27 @@ exports.register = async (req, res, next) => {
     next(err);
   }
 };
+
+// user forget password
+exports.forgetPassword = async(req, res, next) => {
+  try{
+      const email = req.body.email;
+      const new_password = req.body.new_password;
+      const confirm_password = req.body.confirm_password;
+      const user = await User.findOne({email});
+      console.log(user.username, user._id , user.email);
+      if (!user){
+          return res.send({status: 404, message: "User does not exist"});
+      }
+      if (new_password != confirm_password){
+        return res.send({status: 404, message: "Password does not match"}); 
+      }
+      
+      user.password = await user.encryptPassword(new_password);
+
+      user.save();
+      return res.send({status:200, message:"Password Reset Successfully" });
+  }catch(err){
+      next(err);
+  }
+}
