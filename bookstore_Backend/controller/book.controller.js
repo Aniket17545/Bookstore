@@ -32,5 +32,3 @@ exports.deleteBook = async (req, res ) => {
         res.send(book);
     });
 }
-
-// added apis for get all books and get book by id and add new books and update book and delete book

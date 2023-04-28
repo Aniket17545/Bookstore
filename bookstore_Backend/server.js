@@ -21,6 +21,7 @@ db.once('open', () => console.log('Connected to Database'))
 const userRoute = require("./route/user.routes");
 const authRoute =require("./route/auth.route");
 const bookRoute = require("./route/book.route");
+const cartRoute = require("./route/cart.route");
 
 // User Route
 app.use('/user', userRoute);
@@ -30,6 +31,9 @@ app.use('/auth', authRoute);
 
 // Book Route
 app.use('/book', bookRoute);
+
+// Cart Route
+app.use('/cart', cartRoute);
 
 // start the server
 app.listen(port, () => { console.log('Server Started on Port : 5500')});
