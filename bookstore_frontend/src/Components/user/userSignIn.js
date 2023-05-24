@@ -7,7 +7,7 @@ class UserSignIn extends React.Component {
         return (
             <div>
                 <div className="d-flex justify-content-center">
-                    <div className="container" fxLayout="row" fxLayoutAlign="center center" >
+                    <div className="container">
                         <div className="child1">
                             <div className="subchild1">
                                 <img src="./assets/signinlogo.png" alt="" className="logo_img" />
@@ -36,7 +36,7 @@ class UserSignIn extends React.Component {
                                 </div>
 
                                 <div className="mt-4 mb-2">
-                                    <button className="btn btn-lg btn-block btn-l" type="button" style={{ backgroundColor: "#A03037",color:"#fff" }}>Sign In</button>
+                                    <button className="btn btn-lg btn-block btn-l" type="button" style={{ backgroundColor: "#A03037",color:"#fff", width:"24rem" }}>Sign In</button>
                                 </div>
 
                                 <a className="small text-muted" href="#!">Forgot password?</a>
