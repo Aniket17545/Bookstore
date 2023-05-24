@@ -1,0 +1,66 @@
+body {
+    background-color: #ADADAD;
+    font-family: 'Roboto', sans-serif;
+}
+.child1{
+    position: relative;
+}
+
+.subchild1{
+    width: 25rem;
+    height: 25rem;
+    background-color: #fff;
+    margin-top: 135px;
+    margin-left: 150px;
+    border-radius: 2rem;
+    display: inline-block;
+}
+.logo_img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.text{
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.child2{
+    background-color: #fff;
+    width: 30rem;
+    height: 30rem;
+    margin-top: -27.5rem;
+    margin-left: 30rem;
+    border-radius: 1rem;
+    position: absolute;
+}
+
+.l-form{
+    margin-top: 20px;
+}
+
+/* .s-text{
+    margin-top: 2rem;
+} */
+
+/* .img-l {
+    padding-top: 8rem;
+}
+
+.btn-l {
+    color: #ffffff;
+    
+}
+
+.form-control {
+    border-color: #000000;
+}
+
+.icon{ 
+    cursor: pointer;
+} */
