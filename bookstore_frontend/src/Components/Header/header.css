@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+
+.header {
+    background-color: #A03037;
+    height: 4rem;
+}
+
+.brand .brandName {
+    font-size: 23px;
+    color: #fff;
+}
+
+.searchForm {
+    width: 30rem;
+}
+
+.navItem {
+    margin-left: 12rem;
+    font-size: 18px;
+}
+
+.navIcon {
+    color: #fff;
+}
+
+/* .nav-b {
+    background-color: #A03037;
+    position: relative;
+}
+
+.logo {
+    color: #FFFFFF;
+}
+
+.l-text {
+    font-size: 23px;
+}
+
+.search {
+    position: absolute;
+    margin-left: 21%;
+}
+
+.pc-nav {
+    position: absolute;
+    background-color: #A03037;
+    width: 70px;
+    height: 55px;
+    margin-left: 74%;
+}
+
+.p-btn {
+    background-color: #A03037;
+    color: #FFFFFF;
+    border-color: #A03037;
+    width: 70px;
+    height: 55px;
+}
+
+.profile-l {
+    font-size: 20px;
+}
+
+.d-item{
+    width: 10rem;
+}
+
+.c-nav {
+    position: absolute;
+    margin-left: 79.2%;
+    width: 55px;
+}
+
+.citem {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.cart-l {
+    font-size: 20px;
+}
+
+.logo {
+    padding-left: 8%;
+} */
