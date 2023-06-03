@@ -1,11 +1,30 @@
 import React from "react";
+import axios from 'axios';
 import "./userCss.css";
 
 class UserSignIn extends React.Component {
 
+    handleUserSignIn = (e) => {
+        const [post, setPost] = React.useState(null);
+
+        
+        axios({
+            url: 'http://localhost:5500/user',
+            method: 'Get',
+            headers: { 'Content-Type': 'application/JSON' }
+        })
+            .then(res => {
+                // this.setState({ user: res.data.restaurants })
+                setPost(res.data);
+                console.log(post);
+            })
+            .catch((err => console.log(err)))
+    }
+
     render() {
         return (
             <div>
+                {this.handleUserSignIn()};
                 <div className="d-flex justify-content-center">
                     <div className="container">
                         <div className="child1">

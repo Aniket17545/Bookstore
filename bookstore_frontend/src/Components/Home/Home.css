@@ -1,82 +1,15 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fff;
 }
 
-/* navbar */
-.nav-b{
-    background-color: #A03037;
+.banner{
+    align-items: center;
+    width: 100%;
+    height: 400px;
 }
 
-.pc-nav{
-    text-decoration: none;
-    color: #FFFFFF;
+.banner_img{
+    width: 100%;
+    height: 400px;
 }
-
-.text{
-    color: #FFFFFF;
-    display: inline-block;
-    padding-left: 10px;    
-}
-
-.logo{
-    padding-left: 8%;
-}
-
-/* bottom part */
-.box {
-    width: 235px;
-    height: 330px;
-    background-color: #ffffff;
-    border: 2px solid #E2E2E2;
-    border-radius: 3px;
-}
-
-.t-box {
-    background-color: #F5F5F5;
-}
-
-.img-b {
-    height: 135px;
-    width: 180px;
-    padding-left: 40px;
-}
-
-
-
-/* .item{
-    height: 200px;
-} */
-
-/* .drop {
-    background-color: #FFFFFF;
-    border: 1px solid #E2E2E2;
-    border-radius: 1px;
-} */
-
-/* .cart {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.cart-l {
-    padding-left: 2%;
-    font-size: 21px;
-}
-
-.profile {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.profile-l {
-    padding-right: 5%;
-    font-size: 21px;
-} */
-
-/* .logo {
-    padding-left: 8%;
-}
-
-.search {
-    padding-left: 2%;
-} */

@@ -8,6 +8,8 @@ class UserSignUp extends React.Component {
             <div>
                 <div className="d-flex justify-content-center">
                     <div className="container">
+
+                        {/* part1 */}
                         <div className="child1">
                             <div className="subchild1">
                                 <img src="./assets/signinlogo.png" alt="" className="logo_img" />
@@ -16,6 +18,8 @@ class UserSignUp extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        
+                        {/* part2 */}
                         <div className="d-flex align-items-center child2">
                             <form className="ms-5">
 
@@ -43,12 +47,6 @@ class UserSignUp extends React.Component {
                                 <div className="mt-4 mb-2">
                                     <button className="btn btn-lg btn-block btn-l" type="button" style={{ backgroundColor: "#A03037", color: "#fff", width:"24rem" }}>Sign Up</button>
                                 </div>
-
-                                {/* <a className="small text-muted" href="#!">Forgot password?</a>
-                                <p className="mt-2 lg-2" style={{ color: "#393f81" }}>Don't have an account? <a href="#!"
-                                    style={{ color: "#393f81" }}>Register here</a></p>
-                                <a href="#!" className="small text-muted">Terms of use.</a>
-                                <a href="#!" className="small text-muted">Privacy policy</a> */}
                             </form>
                         </div>
                     </div>
